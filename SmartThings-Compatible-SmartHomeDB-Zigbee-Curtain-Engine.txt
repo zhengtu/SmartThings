@@ -12,7 +12,7 @@
  */
 
 metadata {
-    definition(name: "AOK Zigbee Curtain", namespace: "shdb", author: "shdb:ray") {
+    definition(name: "SmartHomeDB Zigbee Curtain Engine", namespace: "SmartHomeDB", author: "SmartHomeDB: Ray Zheng") {
         capability "Actuator"
         capability "Configuration"
         capability "Refresh"
@@ -20,13 +20,13 @@ metadata {
         capability "windowShade"
         capability "Switch"
 
-        fingerprint profileId: "0104", inClusters: "0000, 0001, 0005, 0004, 0102", outClusters: "0019", manufacturer: "AOK", model: "093199ff04984948b4c78167c8e7f47e"
+        fingerprint profileId: "0104", inClusters: "0000, 0001, 0005, 0004, 0102", outClusters: "0019", manufacturer: "SmartHomeDB", model: "093199ff04984948b4c78167c8e7f47e"
     }
 
     command "levelOpenClose"
     
     preferences {
-    		input name: "mode", type: "bool", title: "AOK Curtain Direction Set", description: "Reverse Mode ON", required: true,
+    		input name: "mode", type: "bool", title: "Set SmartHomeDB Curtain Direction", description: "Reverse Mode ON", required: true,
           	displayDuringSetup: true
 				}    
 
